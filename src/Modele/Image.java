@@ -45,7 +45,7 @@ public class Image implements Subject {
      * @return Nom de l'image sans le path
      */
     public String getNomImage(){
-        String nom = path.replace("C:\\Users\\Edouard\\Desktop\\TP3-LOG121\\TP3-LOG121\\src\\Ressources\\", "");
+        String nom = path.replace("src\\Ressources\\", "");
         return nom;
     }
 
