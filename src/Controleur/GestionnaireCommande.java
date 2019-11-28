@@ -1,6 +1,7 @@
 package Controleur;
 
 import Modele.MementoPerspective;
+import Modele.Perspective;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,9 +25,38 @@ public class GestionnaireCommande {
 
     // GETTERS
     public static GestionnaireCommande getInstance(){return instance;}
-    public MementoPerspective getLastMemento(){
-        return listeMemento.get(listeMemento.size() -1);
+    public MementoPerspective getLastMemento(Perspective perspective){
+
+        MementoPerspective m = null;
+
+        for(int i = listeMemento.size() -1; i >= 0; i--){
+
+            if(perspective.equals(listeMemento.get(i).getPerspective())){
+                m = listeMemento.get(i);
+                break;
+            }
+
+        }
+        return m;
+
+
     }
+    public List getListeCommande(){return this.listeCommande;}
+    public List getListeMemento(){return this.listeMemento;}
+
+    public CommandeSauvegarde getLastSave(Perspective perspective){
+
+        CommandeSauvegarde save = null;
+
+        for(int i = listeCommande.size() - 1; i >= 0; i--){
+            if(listeCommande.get(i) instanceof CommandeSauvegarde && perspective.equals(listeCommande.get(i).getPerspective())){
+                save = (CommandeSauvegarde) listeCommande.get(i);
+                break;
+            }
+        }
+        return save;
+    }
+
 
     // Notre commande undo pourrait simplemenent être une méthode plutôt qu'une classe
     public void undo(){ }

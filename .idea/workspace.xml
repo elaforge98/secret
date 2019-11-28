@@ -3,12 +3,46 @@
   <component name="ChangeListManager">
     <list default="true" id="767fdbcb-9e46-4d0d-b127-d7e895d1f384" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Controleur/CommandeTranslation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Controleur/CommandeTranslation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Controleur/CommandeZoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Controleur/CommandeZoom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Controleur/GestionnaireCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Controleur/GestionnaireCommande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Modele/MementoPerspective.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Modele/MementoPerspective.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Modele/Perspective.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Modele/Perspective.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Ressources/Etat/image1.jpg-perspective1.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Ressources/Etat/image1.jpg-perspective2.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Ressources/Etat/image2.jpg-perspective1.ser" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Ressources/Etat/image2.jpg-perspective1.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Ressources/Etat/image2.jpg-perspective2.ser" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Ressources/Etat/image2.jpg-perspective2.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Ressources/Etat/image3.jpg-perspective1.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Ressources/Etat/image3.jpg-perspective2.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Vue/PerspectiveDialog$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Vue/PerspectiveDialog$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Vue/PerspectiveDialog$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Vue/PerspectiveDialog$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Vue/PerspectiveDialog$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Vue/PerspectiveDialog$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Vue/PerspectiveDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LOG121-TP3-U/Vue/PerspectiveDialog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controleur/CommandeTranslation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controleur/CommandeTranslation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controleur/CommandeZoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controleur/CommandeZoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controleur/GestionnaireCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controleur/GestionnaireCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modele/MementoPerspective.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/MementoPerspective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modele/Perspective.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Perspective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Etat/image1.jpg-perspective1.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Etat/image1.jpg-perspective2.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Etat/image2.jpg-perspective1.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Etat/image2.jpg-perspective2.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Etat/image3.jpg-perspective1.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ressources/Etat/image3.jpg-perspective2.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/PerspectiveDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vue/PerspectiveDialog.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,6 +59,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Edouard\Desktop\log121-tp3\src\Ressources\Images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,6 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574691665487</updated>
       <workItem from="1574691667007" duration="1047000" />
+      <workItem from="1574954900253" duration="8992000" />
     </task>
     <servers />
   </component>
@@ -80,7 +120,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

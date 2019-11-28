@@ -8,12 +8,14 @@ public class CommandeTranslation implements Commande{
     private GestionnaireCommande gestionnaire = GestionnaireCommande.getInstance();
     private Model model = Model.getInstance();
     private MementoPerspective mementoInitial;
+    private Perspective perspective;
 
-    public CommandeTranslation(){
+    public CommandeTranslation(Perspective perspective){
+        this.perspective = perspective;
     }
 
     @Override
-    public void execute(Perspective perspective) {
+    public void execute() {
 
         MementoPerspective mementoPerspective = creerMemento();
         perspective.setState(mementoPerspective);
@@ -28,13 +30,17 @@ public class CommandeTranslation implements Commande{
      * déplacement à la position donné par le memento.
      * @return Le memento instancié
      */
-    @Override
     public MementoPerspective creerMemento() {
-        EtatImage stateInitial = gestionnaire.getLastMemento().getState();
+        EtatImage stateInitial = gestionnaire.getLastMemento(perspective).getState();
         EtatImage stateFinal = new EtatImage(stateInitial.getX() + dx,
                                              stateInitial.getY() + dy,
                                                 stateInitial.getScale());
-        return new MementoPerspective(stateFinal);
+        return new MementoPerspective(stateFinal, perspective);
+    }
+
+    @Override
+    public Perspective getPerspective() {
+        return this.perspective;
     }
 
     public void setDeplacement(int dx, int dy){

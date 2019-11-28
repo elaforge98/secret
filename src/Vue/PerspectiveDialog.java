@@ -5,22 +5,25 @@ import Modele.Perspective;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseWheelEvent;
+import java.awt.event.*;
 
 public class PerspectiveDialog extends JDialog {
 
     private Perspective perspective;
     private VuePerspective vue;
+    private GestionnaireCommande gestionnaireCommande = GestionnaireCommande.getInstance();
+    private JMenuPerspective jmenu;
 
     public PerspectiveDialog(Perspective perspective){
 
+        jmenu = new JMenuPerspective(perspective);
         this.perspective = perspective;
         vue = new VuePerspective(perspective);
         initDialog();
         initMouseListeners();
         initMouseWheelListener();
+        setJMenuBar(jmenu);
+
 
     }
 
@@ -31,6 +34,12 @@ public class PerspectiveDialog extends JDialog {
         this.setContentPane(vue);
         this.pack();
         this.setVisible(true);
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                gestionnaireCommande.getLastSave(perspective).setEtat();
+            }
+        });
     }
 
     private void initMouseListeners(){
@@ -57,16 +66,15 @@ public class PerspectiveDialog extends JDialog {
             @Override
             public void mouseDragged(MouseEvent e) {
 
-                commandeTranslation = new CommandeTranslation();
+                commandeTranslation = new CommandeTranslation(perspective);
                 // On calcule le déplacement de la souris en x et en y
                 int dx = e.getPoint().x - debut.x;
                 int dy = e.getPoint().y - debut.y;
                 commandeTranslation.setDeplacement(dx, dy);
-                commandeTranslation.execute(perspective);
+                commandeTranslation.execute();
                 debut = e.getPoint();
                 repaint();
                 revalidate();
-                System.out.println("ALALAL");
             }
         };
         addMouseListener(translation);
@@ -96,17 +104,14 @@ public class PerspectiveDialog extends JDialog {
             @Override
             public void mouseWheelMoved (MouseWheelEvent e) {
 
-                commandeZoom = new CommandeZoom();
+                commandeZoom = new CommandeZoom(perspective);
                 // On calcule le déplacement de la souris en x et en y
                 double move = 0.05f * -(e.getPreciseWheelRotation());
                 scale += move;
-                System.out.println("ZOOM : " + scale);
-
                 commandeZoom.setZoom(scale);
-                commandeZoom.execute(perspective);
+                commandeZoom.execute();
                 repaint();
                 revalidate();
-                System.out.println("IOIOIOIOIO");
             }
         };
         addMouseWheelListener(zoom);

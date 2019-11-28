@@ -12,7 +12,7 @@ public class Model {
     private ArrayList<Image> listeImage;
     private ArrayList<Perspective> listePerspective;
     private static Model instance = new Model();
-    private final String path = "src\\Ressources";
+    private final String path = "src\\Ressources\\Images";
     private File files = new File(path);
 
     private Model(){

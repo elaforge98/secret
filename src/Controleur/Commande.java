@@ -7,6 +7,6 @@ import Modele.Perspective;
 public interface Commande {
 
     // Execute la commande
-    public void execute(Perspective perspective);
-    public MementoPerspective creerMemento();
+    public void execute();
+    public Perspective getPerspective();
 }
