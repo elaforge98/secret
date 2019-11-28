@@ -47,7 +47,6 @@ public class Perspective implements Subject{
     }
 
     public void serializeState(){
-        System.out.println(nom);
         try {
             FileOutputStream fichierOutput =
                     new FileOutputStream("src\\Ressources\\Etat\\"+nom+".ser");
@@ -63,7 +62,7 @@ public class Perspective implements Subject{
 
     // METHODES MEMENTO
     public MementoPerspective creerMemento(){
-        MementoPerspective memento = new MementoPerspective(this.state);
+        MementoPerspective memento = new MementoPerspective(this.state, this);
         return memento;
     }
 

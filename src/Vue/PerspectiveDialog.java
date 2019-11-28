@@ -12,14 +12,18 @@ public class PerspectiveDialog extends JDialog {
     private Perspective perspective;
     private VuePerspective vue;
     private GestionnaireCommande gestionnaireCommande = GestionnaireCommande.getInstance();
+    private JMenuPerspective jmenu;
 
     public PerspectiveDialog(Perspective perspective){
 
+        jmenu = new JMenuPerspective(perspective);
         this.perspective = perspective;
         vue = new VuePerspective(perspective);
         initDialog();
         initMouseListeners();
         initMouseWheelListener();
+        setJMenuBar(jmenu);
+
 
     }
 

@@ -25,7 +25,22 @@ public class GestionnaireCommande {
 
     // GETTERS
     public static GestionnaireCommande getInstance(){return instance;}
-    public MementoPerspective getLastMemento(){return listeMemento.get(listeMemento.size() -1);}
+    public MementoPerspective getLastMemento(Perspective perspective){
+
+        MementoPerspective m = null;
+
+        for(int i = listeMemento.size() -1; i >= 0; i--){
+
+            if(perspective.equals(listeMemento.get(i).getPerspective())){
+                m = listeMemento.get(i);
+                break;
+            }
+
+        }
+        return m;
+
+
+    }
     public List getListeCommande(){return this.listeCommande;}
     public List getListeMemento(){return this.listeMemento;}
 

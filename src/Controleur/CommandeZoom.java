@@ -31,10 +31,10 @@ public class CommandeZoom implements Commande {
      * @return Le memento instancié
      */
     public MementoPerspective creerMemento() {
-        EtatImage stateInitial = gestionnaire.getLastMemento().getState();
+        EtatImage stateInitial = gestionnaire.getLastMemento(perspective).getState();
         EtatImage stateFinal = new EtatImage(stateInitial.getX(),
                 stateInitial.getY(), scale);
-        return new MementoPerspective(stateFinal);
+        return new MementoPerspective(stateFinal, perspective);
     }
 
     @Override
