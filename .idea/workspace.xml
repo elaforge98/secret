@@ -3,12 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="767fdbcb-9e46-4d0d-b127-d7e895d1f384" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controleur/Commande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controleur/Commande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controleur/CommandeSauvegarde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controleur/CommandeSauvegarde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controleur/CommandeTranslation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controleur/CommandeTranslation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controleur/CommandeZoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controleur/CommandeZoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controleur/GestionnaireCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controleur/GestionnaireCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modele/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/PanneauVignette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vue/PanneauVignette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/PerspectiveDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vue/PerspectiveDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vue/VuePerspective.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vue/VuePerspective.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,6 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574691665487</updated>
       <workItem from="1574691667007" duration="1047000" />
+      <workItem from="1574954900253" duration="3546000" />
     </task>
     <servers />
   </component>
@@ -80,7 +97,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

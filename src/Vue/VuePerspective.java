@@ -1,5 +1,6 @@
 package Vue;
 
+import Controleur.GestionnaireCommande;
 import Modele.*;
 
 import javax.swing.*;

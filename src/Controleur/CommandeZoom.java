@@ -6,10 +6,14 @@ public class CommandeZoom implements Commande {
 
     private GestionnaireCommande gestionnaire = GestionnaireCommande.getInstance();
     private float scale = 0;
+    private Perspective perspective;
 
+    public CommandeZoom(Perspective perspective){
+        this.perspective = perspective;
+    }
 
     @Override
-    public void execute(Perspective perspective) {
+    public void execute() {
         MementoPerspective mementoPerspective = creerMemento();
         perspective.setState(mementoPerspective);
 
@@ -32,6 +36,11 @@ public class CommandeZoom implements Commande {
         EtatImage stateFinal = new EtatImage(stateInitial.getX(),
                 stateInitial.getY(), scale);
         return new MementoPerspective(stateFinal);
+    }
+
+    @Override
+    public Perspective getPerspective() {
+        return perspective;
     }
 
     public void setZoom(float scale) {
