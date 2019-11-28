@@ -2,6 +2,7 @@ package Modele;
 
 import Controleur.GestionnaireCommande;
 
+import java.io.*;
 import java.util.ArrayList;
 
 public class Perspective implements Subject{
@@ -43,6 +44,21 @@ public class Perspective implements Subject{
     public void setState(EtatImage e){
         state = e;
         notifyObservers();
+    }
+
+    public void serializeState(){
+        System.out.println(nom);
+        try {
+            FileOutputStream fichierOutput =
+                    new FileOutputStream("src\\Ressources\\Etat\\"+nom+".ser");
+            ObjectOutputStream out = new ObjectOutputStream(fichierOutput);
+            out.writeObject(this.state);
+            out.close();
+            fichierOutput.close();
+        } catch (IOException i) {
+            i.printStackTrace();
+        }
+
     }
 
     // METHODES MEMENTO

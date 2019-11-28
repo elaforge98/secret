@@ -30,7 +30,6 @@ public class CommandeZoom implements Commande {
      *
      * @return Le memento instancié
      */
-    @Override
     public MementoPerspective creerMemento() {
         EtatImage stateInitial = gestionnaire.getLastMemento().getState();
         EtatImage stateFinal = new EtatImage(stateInitial.getX(),

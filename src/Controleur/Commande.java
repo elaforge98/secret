@@ -8,6 +8,5 @@ public interface Commande {
 
     // Execute la commande
     public void execute();
-    public MementoPerspective creerMemento();
     public Perspective getPerspective();
 }

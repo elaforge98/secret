@@ -71,7 +71,6 @@ public class PerspectiveDialog extends JDialog {
                 debut = e.getPoint();
                 repaint();
                 revalidate();
-                System.out.println("ALALAL");
             }
         };
         addMouseListener(translation);
@@ -105,13 +104,10 @@ public class PerspectiveDialog extends JDialog {
                 // On calcule le déplacement de la souris en x et en y
                 double move = 0.05f * -(e.getPreciseWheelRotation());
                 scale += move;
-                System.out.println("ZOOM : " + scale);
-
                 commandeZoom.setZoom(scale);
                 commandeZoom.execute();
                 repaint();
                 revalidate();
-                System.out.println("IOIOIOIOIO");
             }
         };
         addMouseWheelListener(zoom);

@@ -1,6 +1,8 @@
 package Modele;
 
-public class EtatImage {
+import java.io.Serializable;
+
+public class EtatImage implements Serializable{
 
     private int x;
     private int y;

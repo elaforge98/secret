@@ -2,13 +2,12 @@ package Modele;
 
 import javax.imageio.ImageIO;
 import java.awt.image.*;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Image implements Subject {
+public class Image implements Subject{
 
 
     private final int NOMBRE_PERSPECTIVES = 2;
@@ -28,8 +27,12 @@ public class Image implements Subject {
             e.printStackTrace();
         }
 
-        for(int i = 0; i < NOMBRE_PERSPECTIVES; i++)
-            listePerspective.add(new Perspective(this, i + 1));
+        for(int i = 0; i < NOMBRE_PERSPECTIVES; i++){
+
+            Perspective p = new Perspective(this, i + 1);
+            listePerspective.add(p);
+
+        }
 
     }
 
@@ -45,7 +48,7 @@ public class Image implements Subject {
      * @return Nom de l'image sans le path
      */
     public String getNomImage(){
-        String nom = path.replace("src\\Ressources\\", "");
+        String nom = path.replace("src\\Ressources\\Images", "");
         return nom;
     }
 

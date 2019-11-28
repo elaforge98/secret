@@ -30,7 +30,6 @@ public class CommandeTranslation implements Commande{
      * déplacement à la position donné par le memento.
      * @return Le memento instancié
      */
-    @Override
     public MementoPerspective creerMemento() {
         EtatImage stateInitial = gestionnaire.getLastMemento().getState();
         EtatImage stateFinal = new EtatImage(stateInitial.getX() + dx,
